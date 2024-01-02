@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.example.tes3.MainController"
+          alignment="center"
+          hgap="10"
+          vgap="10"
+          stylesheets="styles.css">
+
+  <Label text="Jenis Sampah:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+  <TextField fx:id="jenisSampahField" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+  <Label text="Jumlah Sampah:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+  <TextField fx:id="jumlahSampahField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+  <Label text="Lokasi Sampah:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+  <TextField fx:id="lokasiSampahField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+  <!-- Tambahkan elemen-elemen baru untuk informasi petugas -->
+  <Label text="Nama Petugas:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+  <TextField fx:id="namaPetugasField" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+  <Label text="Nomor Identitas Petugas:" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+  <TextField fx:id="nomorIdentitasPetugasField" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+
+  <Label text="Jabatan Petugas:" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+  <TextField fx:id="jabatanPetugasField" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+
+  <!-- Tambahkan tombol untuk menambahkan petugas -->
+  <Button fx:id="tambahPetugasButton" text="Tambah Petugas" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+
+  <Button fx:id="tambahSampahButton" text="Tambah Sampah" GridPane.columnIndex="1" GridPane.rowIndex="7"/>
+
+  <Label fx:id="laporanLabel" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="8"/>
+</GridPane>
